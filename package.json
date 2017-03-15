@@ -1,0 +1,27 @@
+{
+  "name": "plus.webdriver-sizzle",
+  "version": "1.0.0",
+  "description": "webdriver-sizzle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slavahatnuke/plus.webdriver-sizzle.git"
+  },
+  "keywords": [
+    "webdriver",
+    "sizzle",
+    "css3",
+    "selector",
+    "test",
+    "testing"
+  ],
+  "author": "slava hatnuke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slavahatnuke/plus.webdriver-sizzle/issues"
+  },
+  "homepage": "https://github.com/slavahatnuke/plus.webdriver-sizzle#readme"
+}
