@@ -5,7 +5,7 @@ Locate a [selenium-webdriver](https://npmjs.org/package/selenium-webdriver) elem
 
 ```javascript
 var selenium = require('selenium-webdriver');
-var sizzle = require('webdriver-sizzle');
+var sizzle = require('plus.webdriver-sizzle');
 var driver = new seleniumWebdriver.Builder().forBrowser('chrome').build();
 var $ = sizzle(driver);
     

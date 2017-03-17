@@ -1,6 +1,6 @@
 {
   "name": "plus.webdriver-sizzle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webdriver-sizzle",
   "main": "index.js",
   "scripts": {
