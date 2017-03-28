@@ -41,7 +41,7 @@ module.exports = function (driver, selenium) {
             return init()
                 .then(function () {
                     return driver.findElement(selenium.By.js(function (selector) {
-                        return (window.$$$Sizzle$$$(selector) || [])[0];
+                        return window && window.$$$Sizzle$$$ ? (window.$$$Sizzle$$$(selector) || [])[0] : undefined;
                     }, selector));
                 }).catch(function (err) {
                     throw new Error("Selector " + selector + " matches nothing : " + err.message);
@@ -56,7 +56,7 @@ module.exports = function (driver, selenium) {
         finder = function () {
             return init().then(function () {
                 return driver.findElements(selenium.By.js(function (selector) {
-                    return window.$$$Sizzle$$$(selector) || [];
+                    return window && window.$$$Sizzle$$$ ? (window.$$$Sizzle$$$(selector) || []) : [];
                 }, selector));
             }).catch(function (err) {
                 throw new Error("Selector " + selector + " matches nothing : " + err.message);
